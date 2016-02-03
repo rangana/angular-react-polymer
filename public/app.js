@@ -10,7 +10,7 @@ angular.module('reactAngular', [])
         link: function (scope, element) {
             scope.$watch('myModel.message', function (newVal, oldVal) {
                 ReactDOM.render(
-                    React.createElement(Hello, {name: scope.myModel.message}),
+                    React.createElement(window.com.pearson.Hello, {name: scope.myModel.message}),
                     document.getElementById('example')
                 );
             });
